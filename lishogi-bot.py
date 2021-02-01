@@ -327,12 +327,15 @@ def update_board(board, move):
 
 def intro():
     return r"""
-    .   _/\_
-    .  //o o\\
-    .  ||    ||  lishogi-bot %s
-    .  ||    ||
-    .  ||____||  Play on Lishogi with a bot
-    """ % __version__
+ .   _      _     _                 _ 
+ .  | |    (_)   | |               (_)                 
+ .  | |     _ ___| |__   ___   __ _ _   ___  _ __ __ _ 
+ .  | |    | / __| '_ \ / _ \ / _` | | / _ \| '__/ _` |   lishogi-bot %s  
+ .  | |____| \__ \ | | | (_) | (_| | || (_) | | | (_| |
+ .  |______|_|___/_| |_|\___/ \__, |_(_)___/|_|  \__, |   Play on Lishogi with a bot
+                               __/ |              __/ |
+                              |___/              |___/ 
+ """ % __version__
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Play on Lishogi with a bot')
